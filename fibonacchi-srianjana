@@ -1,0 +1,16 @@
+public class fibonacci {
+    public static void main(String[] args){
+        int counter1 = 0;
+        int counter2 = 1;
+        int result;
+        System.out.print(counter1 + ","+counter2);
+
+        for(int i=0;i<=10;i++){
+            result = counter1+counter2;
+            System.out.print(","+result);
+            counter1 = counter2;
+            counter2 = result;
+        }
+
+    }
+}
